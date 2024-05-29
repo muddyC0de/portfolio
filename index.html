@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <header class="header">
+    <div class="container">
+      <ul class="navigation">
+        <li onclick="moveToFunc(1)">ABOUT ME</li>
+        <li onclick="moveToFunc(2)">SKILLS</li>
+        <li onclick="moveToFunc(3)">WORKS</li>
+        <li onclick="moveToFunc(4)">GH REPOS</li>
+        <li onclick="moveToFunc(5)">OTHER</li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div id="fullpage">
+          <div class="section titleSec">
+            <h2>Hello World! I'm</h2>
+            <h1>VLAD</h1>
+            <p>
+              Hi, my fullname is <span>Lubchenko Vlad</span>. I'm 16 years old.
+            </p>
+            <p>I'm a frontend developer. I write code in JavaScript.</p>
+            <p>
+              My love is
+              <img
+                src="https://em-content.zobj.net/source/apple/391/red-heart_2764-fe0f.png"
+                alt=""
+              />
+              ReactJS
+              <img
+                src="https://em-content.zobj.net/source/apple/391/atom-symbol_269b-fe0f.png"
+                alt=""
+              />
+              Redux Toolkit
+            </p>
+          </div>
+          <div class="section skillsSec">
+            <h1><img src="./img/skills-icon.svg" alt="" />SKILLS</h1>
+            <div class="items">
+              <div class="item">
+                <img src="./img/HTML5-icon.svg" alt="" />
+                <span>HTML</span>
+              </div>
+              <div class="item">
+                <img src="./img/CSS3-icon.svg" alt="" />
+                <span>CSS</span>
+              </div>
+              <div class="item">
+                <img src="./img/JS-icon.svg" alt="" />
+                <span>JS</span>
+              </div>
+              <div class="item">
+                <img src="./img/typescript-icon.svg" alt="" />
+                <span>TS</span>
+              </div>
+              <div class="item">
+                <img src="./img/React-icon.svg" alt="" />
+                <span>React</span>
+              </div>
+              <div class="item">
+                <img src="./img/redux-icon.svg" alt="" />
+                <span>RTK</span>
+              </div>
+              <div class="item">
+                <img src="./img/scss-icon.svg" alt="" />
+                <span>Scss</span>
+              </div>
+            </div>
+          </div>
+          <div class="section worksSec">
+            <h1><img src="./img/works-icon.svg" alt="" />WORKS</h1>
+            <div class="workItems">
+              <a href="https://github.com/muddyC0de/react-pizza"
+                ><div class="workItem">
+                  <div class="workImg">
+                    <img src="./img/react-pizza.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <span class="techStack"
+                      >Tech Stack | <img src="./img/React-icon.svg" alt="" />
+                      <img src="./img/redux-icon.svg" alt="" />
+                      <img src="./img/typescript-icon.svg" alt="" />
+                      <img src="./img/scss-icon.svg" alt="" />
+                    </span>
+                    <h2>React - pizza</h2>
+                    <p>Online pizza ordering store - React Pizza</p>
+                  </div>
+                </div></a
+              >
+
+              <a href="https://github.com/muddyC0de/react-sneakers">
+                <div class="workItem">
+                  <div class="workImg">
+                    <img src="./img/react-sneakers.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <span class="techStack"
+                      >Tech Stack | <img src="./img/React-icon.svg" alt="" />
+                      <img src="./img/JS-icon.svg" alt="" />
+                      <img src="./img/scss-icon.svg" alt="" />
+                    </span>
+                    <h2>React - sneakers</h2>
+                    <p>Online Sneakers Store - React Sneakers</p>
+                  </div>
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="section gitReposSec">
+            <div class="gitReposTitle">
+              <h1>GitHub Repositories</h1>
+              <a href="https://github.com/muddyC0de"
+                ><span>All repositories ></span></a
+              >
+            </div>
+            <div class="githubReposItems"></div>
+          </div>
+
+          <div class="section otherSec">
+            <div class="otherSecItems">
+              <div class="otherSecItem">
+                <h2>Educations</h2>
+                <p>I am studying at Tubiltsiv Lyceum in Cherkasy Oblast</p>
+              </div>
+              <div class="otherSecItem">
+                <h2>Frond-End</h2>
+                <ul>
+                  <li>- JavaScript (ES6)</li>
+                  <li>- TypeScript</li>
+                  <li>- SCSS</li>
+                  <li>- Material UI, Bootstrap</li>
+                  <li>- ReactJS, Redux Toolkit</li>
+                </ul>
+              </div>
+              <div class="otherSecItem">
+                <h2>Contacts</h2>
+
+                <ul>
+                  <li>vladlubchenko0@gmail.com</li>
+                  <li>Telegram: <span class="bolder">@gryazyyy</span></li>
+                </ul>
+              </div>
+              <div class="otherSecItem">
+                <h2>Other skills</h2>
+
+                <ul>
+                  <li>- Git / GitHub</li>
+                  <li>- BEM (CSS)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

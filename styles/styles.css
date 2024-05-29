@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+*::selection {
+  background-color: rgba(20, 223, 155, 0.233);
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 999;
+  font-size: 22px;
+  font-weight: 800;
+  padding-top: 30px;
+  position: sticky;
+  width: 100%;
+  position: fixed;
+  height: 98px;
+  padding: 0;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(20px);
+}
+.header .navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .navigation li {
+  cursor: pointer;
+  margin-right: 90px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  position: relative;
+}
+.header .navigation li::after {
+  opacity: 0;
+  content: "";
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(20, 223, 155);
+  height: 5px;
+  width: 0;
+  position: absolute;
+  top: 42px;
+  left: 0px;
+  box-shadow: 0 0 15px rgba(20, 223, 155, 0.7);
+}
+.header .navigation li:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+.header .selected {
+  color: rgb(20, 223, 155);
+}
+.header .selected::after {
+  opacity: 1 !important;
+  content: "";
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(20, 223, 155);
+  height: 5px;
+  width: 100% !important;
+  position: absolute;
+  top: 42px;
+  left: 0px;
+  box-shadow: 0 0 15px rgba(20, 223, 155, 0.7);
+}
+
+.fp-overflow {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.titleSec {
+  display: flex;
+  align-items: center;
+}
+.titleSec h2 {
+  font-size: 60px;
+  color: #646464;
+}
+.titleSec h1 {
+  color: rgb(20, 223, 155);
+  font-size: 120px;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+.titleSec p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.titleSec p span {
+  font-weight: bolder;
+}
+.titleSec p img {
+  width: 24px;
+}
+
+.skillsSec {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+}
+.skillsSec h1 {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.skillsSec h1 img {
+  width: 44px;
+  margin-right: 16px;
+}
+.skillsSec .items {
+  display: flex;
+  flex-wrap: wrap;
+  height: 180px;
+}
+.skillsSec .item {
+  height: 130px;
+  margin-right: 23px;
+  display: flex;
+  width: 135px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 23px;
+  padding: 13px;
+  border-radius: 20px;
+  border: 1px solid #f3f3f3;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.skillsSec .item img {
+  width: 60px;
+  margin-bottom: 12px;
+}
+.skillsSec .item span {
+  font-weight: 500;
+}
+.skillsSec .item:hover {
+  box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px);
+}
+
+.worksSec {
+  display: flex;
+  align-items: center;
+}
+.worksSec::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(20, 223, 155, 0.24);
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.worksSec h1 {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.worksSec h1 img {
+  width: 44px;
+  margin-right: 16px;
+}
+.worksSec .techStack {
+  display: flex;
+  align-items: center;
+}
+.worksSec .techStack img {
+  width: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.worksSec .workItems {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  display: grid;
+  height: 537px;
+  width: 1112px;
+  padding: 0 15px;
+}
+.worksSec .workItem {
+  background-color: #fff;
+  cursor: pointer;
+  width: 500px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+  height: 492px;
+  border-radius: 9px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.worksSec .workItem:hover {
+  box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px);
+}
+.worksSec .workImg {
+  margin-bottom: 16px;
+}
+.worksSec .workImg img {
+  width: 500px;
+  border-radius: 9px 9px 0px 0px;
+  height: 285px;
+}
+.worksSec .description {
+  padding: 0 15px;
+}
+.worksSec .description span {
+  font-size: 18px;
+  color: #646464;
+  font-weight: 500;
+}
+.worksSec .description h2 {
+  margin-top: 10px;
+  font-weight: 500;
+}
+.worksSec .description p {
+  margin-top: 17px;
+}
+
+.gitReposSec {
+  display: flex;
+  align-items: center;
+  background-color: rgba(20, 223, 155, 0.24);
+}
+.gitReposSec .gitReposTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.gitReposSec .gitReposTitle span {
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+.gitReposSec h1 {
+  color: rgba(0, 0, 0, 0.7803921569);
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+.gitReposSec .githubReposItems {
+  display: flex;
+  flex-direction: column;
+}
+.gitReposSec .githubReposItems .githubReposItem {
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 25px;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 30px;
+  width: 100%;
+  background-color: #fff;
+  height: 150px;
+  border-radius: 9px;
+}
+.gitReposSec .githubReposItems .githubReposItem:hover {
+  transform: translateY(-5px);
+}
+.gitReposSec .githubReposItems .githubReposItem h2 {
+  color: rgba(0, 0, 0, 0.7803921569);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.gitReposSec .githubReposItems .githubReposItem p {
+  margin-bottom: 10px;
+}
+.gitReposSec .githubReposItems .githubReposItem img {
+  margin-right: 3px;
+}
+.gitReposSec .githubReposItems .githubReposItem span {
+  font-family: "Open Sans", sans-serif;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+.gitReposSec .githubReposItems .githubReposItem .repoInfo {
+  display: flex;
+}
+.gitReposSec .githubReposItems .githubReposItem .JavaScript,
+.gitReposSec .githubReposItems .githubReposItem .TypeScript {
+  height: 17px;
+  width: 17px;
+  border-radius: 20px;
+  margin-right: 8px;
+}
+.gitReposSec .githubReposItems .githubReposItem .TypeScript {
+  background: #1780f9;
+}
+.gitReposSec .githubReposItems .githubReposItem .JavaScript {
+  background-color: rgb(238, 238, 17);
+}
+
+.otherSec {
+  display: flex;
+  align-items: center;
+}
+.otherSec .otherSecItems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 30px;
+}
+.otherSec .otherSecItems li {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.otherSec h2 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.otherSec p {
+  font-weight: 400;
+  font-size: 17px;
+}
+.otherSec .bolder {
+  font-weight: 600;
+}
+
+.fp-watermark {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

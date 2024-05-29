@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@octokit/rest": "^20.1.1",
+    "fullpage.js": "^4.0.22",
+    "octokit": "^4.0.2",
+    "scss": "^0.2.4"
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "fullpage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

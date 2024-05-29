@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  &::selection {
+    background-color: rgba(20, 223, 155, 0.233);
+  }
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 999;
+  font-size: 22px;
+  font-weight: 800;
+  padding-top: 30px;
+  position: sticky;
+  width: 100%;
+  position: fixed;
+  height: 98px;
+  padding: 0;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(20px);
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      cursor: pointer;
+      margin-right: 90px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      position: relative;
+
+      &::after {
+        opacity: 0;
+        content: "";
+        transition: all 0.2s ease-in-out;
+        background-color: rgb(20, 223, 155);
+        height: 5px;
+        width: 0; // Начальная ширина 0
+        position: absolute;
+        top: 42px;
+        left: 0px;
+        box-shadow: 0 0 15px rgba(20, 223, 155, 0.7);
+      }
+
+      &:hover:after {
+        opacity: 1;
+        width: 100%; // Изменяем ширину на 100% при наведении
+      }
+    }
+  }
+
+  .selected {
+    color: rgb(20, 223, 155);
+    &::after {
+      opacity: 1 !important;
+      content: "";
+      transition: all 0.2s ease-in-out;
+      background-color: rgb(20, 223, 155);
+      height: 5px;
+      width: 100% !important;
+      position: absolute;
+      top: 42px;
+      left: 0px;
+      box-shadow: 0 0 15px rgba(20, 223, 155, 0.7);
+    }
+  }
+}
+
+.fp-overflow {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.titleSec {
+  display: flex;
+  align-items: center;
+  h2 {
+    font-size: 60px;
+    color: #646464;
+  }
+
+  h1 {
+    color: rgb(20, 223, 155);
+    font-size: 120px;
+    font-weight: 800;
+    margin-bottom: 60px;
+  }
+
+  p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    span {
+      font-weight: bolder;
+    }
+
+    img {
+      width: 24px;
+    }
+  }
+}
+
+.skillsSec {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  h1 {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    img {
+      width: 44px;
+      margin-right: 16px;
+    }
+  }
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    height: 180px;
+  }
+  .item {
+    height: 130px;
+    margin-right: 23px;
+    display: flex;
+    width: 135px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23px;
+    padding: 13px;
+    border-radius: 20px;
+    border: 1px solid #f3f3f3;
+    img {
+      width: 60px;
+      margin-bottom: 12px;
+    }
+
+    span {
+      font-weight: 500;
+    }
+
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.06);
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.worksSec {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(20, 223, 155, 0.24);
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+  h1 {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    img {
+      width: 44px;
+      margin-right: 16px;
+    }
+  }
+  .techStack {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+  .workItems {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    display: grid;
+    height: 537px;
+    width: 1112px;
+    padding: 0 15px;
+  }
+  .workItem {
+    background-color: #fff;
+    cursor: pointer;
+    width: 500px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+    height: 492px;
+    border-radius: 9px;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.06);
+      transform: translateY(-5px);
+    }
+  }
+  .workImg {
+    margin-bottom: 16px;
+    img {
+      width: 500px;
+      border-radius: 9px 9px 0px 0px;
+      height: 285px;
+    }
+  }
+
+  .description {
+    padding: 0 15px;
+
+    span {
+      font-size: 18px;
+      color: #646464;
+      font-weight: 500;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    p {
+      margin-top: 17px;
+    }
+  }
+}
+
+.gitReposSec {
+  display: flex;
+  align-items: center;
+  background-color: rgba(20, 223, 155, 0.24);
+
+  .gitReposTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    span {
+      font-weight: 500;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+  h1 {
+    color: #000000c7;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .githubReposItems {
+    display: flex;
+    flex-direction: column;
+    .githubReposItem {
+      box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+      &:hover {
+        transform: translateY(-5px);
+      }
+      cursor: pointer;
+      display: flex;
+      margin-bottom: 25px;
+      flex-direction: column;
+      justify-content: center;
+      font-family: "Open Sans", sans-serif;
+      padding: 30px;
+      width: 100%;
+      background-color: #fff;
+      height: 150px;
+      border-radius: 9px;
+
+      h2 {
+        color: #000000c7;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+      img {
+        margin-right: 3px;
+      }
+      span {
+        font-family: "Open Sans", sans-serif;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+      }
+      .repoInfo {
+        display: flex;
+      }
+
+      .JavaScript,
+      .TypeScript {
+        height: 17px;
+        width: 17px;
+        border-radius: 20px;
+        margin-right: 8px;
+      }
+
+      .TypeScript {
+        background: #1780f9;
+      }
+
+      .JavaScript {
+        background-color: rgb(238, 238, 17);
+      }
+    }
+  }
+}
+
+.otherSec {
+  display: flex;
+  align-items: center;
+  .otherSecItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 30px;
+    li {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  .bolder {
+    font-weight: 600;
+  }
+}
+
+.fp-watermark {
+  display: none;
+}
