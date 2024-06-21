@@ -131,11 +131,11 @@ a {
   .items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     height: 180px;
   }
   .item {
     height: 130px;
-    margin-right: 23px;
     display: flex;
     width: 116px;
     flex-direction: column;

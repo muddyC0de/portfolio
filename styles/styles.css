@@ -127,13 +127,13 @@ a {
 .skillsSec .items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   height: 180px;
 }
 .skillsSec .item {
   height: 130px;
-  margin-right: 23px;
   display: flex;
-  width: 135px;
+  width: 116px;
   flex-direction: column;
   align-items: center;
   font-size: 23px;
