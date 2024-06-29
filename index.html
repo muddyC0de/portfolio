@@ -1,185 +1,229 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" href="fullpage.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
     <title>Portfolio</title>
   </head>
-  <header class="header">
-    <div class="container">
-      <ul class="navigation">
-        <li onclick="moveToFunc(1)">ABOUT ME</li>
-        <li onclick="moveToFunc(2)">SKILLS</li>
-        <li onclick="moveToFunc(3)">WORKS</li>
-        <li onclick="moveToFunc(4)">GH REPOS</li>
-        <li onclick="moveToFunc(5)">OTHER</li>
-      </ul>
-    </div>
-  </header>
   <body>
+    <header class="header">
+      <div class="container">
+        <ul class="navigation">
+          <li onclick="moveToFunc(1)">ABOUT ME</li>
+          <li onclick="moveToFunc(2)">SKILLS</li>
+          <li onclick="moveToFunc(3)">WORKS</li>
+          <li onclick="moveToFunc(4)">GH REPOS</li>
+          <li onclick="moveToFunc(5)">OTHER</li>
+        </ul>
+      </div>
+    </header>
     <div class="container">
-      <div class="content">
-        <div id="fullpage">
-          <div class="section titleSec">
-            <h2>Hello World! I'm</h2>
-            <h1>VLAD</h1>
-            <p>
-              Hi, my fullname is <span>Lubchenko Vlad</span>. I'm 16 years old.
-            </p>
-            <p>I'm a frontend developer. I write code in JavaScript.</p>
-            <p>
-              My love is
-              <img
-                src="https://em-content.zobj.net/source/apple/391/red-heart_2764-fe0f.png"
-                alt=""
-              />
-              ReactJS
-              <img
-                src="https://em-content.zobj.net/source/apple/391/atom-symbol_269b-fe0f.png"
-                alt=""
-              />
-              Redux Toolkit
-            </p>
-          </div>
-          <div class="section skillsSec">
-            <h1><img src="./img/skills-icon.svg" alt="" />SKILLS</h1>
-            <div class="items">
-              <div class="item">
-                <img src="./img/HTML5-icon.svg" alt="" />
-                <span>HTML</span>
-              </div>
-              <div class="item">
-                <img src="./img/CSS3-icon.svg" alt="" />
-                <span>CSS</span>
-              </div>
-              <div class="item">
-                <img src="./img/JS-icon.svg" alt="" />
-                <span>JS</span>
-              </div>
-              <div class="item">
-                <img src="./img/typescript-icon.svg" alt="" />
-                <span>TS</span>
-              </div>
-              <div class="item">
-                <img src="./img/React-icon.svg" alt="" />
-                <span>React</span>
-              </div>
-              <div class="item">
-                <img src="./img/next-js.svg" alt="" />
-                <span>Next</span>
-              </div>
-              <div class="item">
-                <img src="./img/redux-icon.svg" alt="" />
-                <span>RTK</span>
-              </div>
-              <div class="item">
-                <img src="./img/scss-icon.svg" alt="" />
-                <span>Scss</span>
-              </div>
+      <div class="content" id="fullpage">
+        <div class="section titleSec">
+          <h2>Hello World! I'm</h2>
+          <h1>VLAD</h1>
+          <p>
+            Hi, my fullname is <span>Lubchenko Vlad</span>. I'm 16 years old.
+          </p>
+          <p>I'm a frontend developer. I write code in JavaScript.</p>
+          <p>
+            My love is
+            <img
+              src="https://em-content.zobj.net/source/apple/391/red-heart_2764-fe0f.png"
+              alt="heart"
+            />
+            ReactJS
+            <img
+              src="https://em-content.zobj.net/source/apple/391/atom-symbol_269b-fe0f.png"
+              alt="atom"
+            />
+            Redux Toolkit
+          </p>
+        </div>
+        <div class="section skillsSec">
+          <h1><img src="./img/skills-icon.svg" alt="skills" />SKILLS</h1>
+          <div class="items">
+            <div class="item">
+              <img src="./img/HTML5-icon.svg" alt="HTML5" />
+              <span>HTML</span>
+            </div>
+            <div class="item">
+              <img src="./img/CSS3-icon.svg" alt="CSS3" />
+              <span>CSS</span>
+            </div>
+            <div class="item">
+              <img src="./img/JS-icon.svg" alt="JavaScript" />
+              <span>JS</span>
+            </div>
+            <div class="item">
+              <img src="./img/typescript-icon.svg" alt="TypeScript" />
+              <span>TS</span>
+            </div>
+            <div class="item">
+              <img src="./img/React-icon.svg" alt="React" />
+              <span>React</span>
+            </div>
+            <div class="item">
+              <img src="./img/next-js.svg" alt="Next.js" />
+              <span>Next</span>
+            </div>
+            <div class="item">
+              <img src="./img/redux-icon.svg" alt="Redux" />
+              <span>RTK</span>
+            </div>
+            <div class="item">
+              <img src="./img/scss-icon.svg" alt="SCSS" />
+              <span>Scss</span>
             </div>
           </div>
-          <div class="section worksSec">
-            <h1><img src="./img/works-icon.svg" alt="" />WORKS</h1>
-            <div class="workItems">
-              <a href="https://github.com/muddyC0de/react-pizza"
-                ><div class="workItem">
-                  <div class="workImg">
-                    <img src="./img/react-pizza.png" alt="" />
-                  </div>
-                  <div class="description">
-                    <span class="techStack"
-                      >Tech Stack | <img src="./img/React-icon.svg" alt="" />
-                      <img src="./img/redux-icon.svg" alt="" />
-                      <img src="./img/typescript-icon.svg" alt="" />
-                      <img src="./img/scss-icon.svg" alt="" />
-                    </span>
-                    <h2>React - pizza</h2>
-                    <p>Online pizza ordering store - React Pizza</p>
-                  </div>
-                </div></a
+        </div>
+        <div class="section worksSec">
+          <h1><img src="./img/works-icon.svg" alt="works" />WORKS</h1>
+          <swiper-container
+            class="mySwiper"
+            pagination="true"
+            pagination-clickable="true"
+            space-between="30"
+            slides-per-view="2"
+            style="--swiper-theme-color: rgb(20, 223, 155)"
+          >
+            <swiper-slide>
+              <a
+                class="swiper-slide"
+                href="https://github.com/muddyC0de/react-pizza"
               >
-
-              <a href="https://github.com/muddyC0de/react-sneakers">
                 <div class="workItem">
                   <div class="workImg">
-                    <img src="./img/react-sneakers.png" alt="" />
+                    <img src="./img/react-pizza.png" alt="React Pizza" />
                   </div>
                   <div class="description">
-                    <span class="techStack"
-                      >Tech Stack | <img src="./img/React-icon.svg" alt="" />
-                      <img src="./img/JS-icon.svg" alt="" />
-                      <img src="./img/scss-icon.svg" alt="" />
+                    <span class="techStack">
+                      Tech Stack |
+                      <img src="./img/React-icon.svg" alt="React" />
+                      <img src="./img/redux-icon.svg" alt="Redux" />
+                      <img src="./img/typescript-icon.svg" alt="TypeScript" />
+                      <img src="./img/scss-icon.svg" alt="SCSS" />
                     </span>
-                    <h2>React - sneakers</h2>
+                    <h2>React - Pizza</h2>
+                    <p>Online pizza ordering store - React Pizza</p>
+                  </div>
+                </div>
+              </a></swiper-slide
+            >
+            <swiper-slide>
+              <a
+                class="swiper-slide"
+                href="https://github.com/muddyC0de/mern-blog-frontend"
+              >
+                <div class="workItem">
+                  <div class="workImg">
+                    <img src="./img/mern-blog.png" alt="Mern-blog" />
+                  </div>
+                  <div class="description">
+                    <span class="techStack">
+                      Tech Stack |
+                      <img src="./img/React-icon.svg" alt="React" />
+                      <img src="./img/next-js.svg" alt="Next" />
+                      <img src="./img/redux-icon.svg" alt="Redux" />
+                      <img src="./img/typescript-icon.svg" alt="TypeScript" />
+                      <img src="./img/scss-icon.svg" alt="SCSS" />
+                    </span>
+                    <h2>MERN - blog</h2>
+                    <p>Mern blog</p>
+                  </div>
+                </div>
+              </a></swiper-slide
+            >
+            <swiper-slide>
+              <a
+                class="swiper-slide"
+                href="https://github.com/muddyC0de/react-sneakers"
+              >
+                <div class="workItem">
+                  <div class="workImg">
+                    <img src="./img/react-sneakers.png" alt="React Sneakers" />
+                  </div>
+                  <div class="description">
+                    <span class="techStack">
+                      Tech Stack |
+                      <img src="./img/React-icon.svg" alt="React" />
+                      <img src="./img/JS-icon.svg" alt="JavaScript" />
+                      <img src="./img/scss-icon.svg" alt="SCSS" />
+                    </span>
+                    <h2>React - Sneakers</h2>
                     <p>Online Sneakers Store - React Sneakers</p>
                   </div>
-                </div></a
-              >
-            </div>
+                </div>
+              </a></swiper-slide
+            >
+          </swiper-container>
+        </div>
+        <div class="section gitReposSec">
+          <div class="gitReposTitle">
+            <h1>GitHub Repositories</h1>
+            <a href="https://github.com/muddyC0de"
+              ><span>All repositories &gt;</span></a
+            >
           </div>
-          <div class="section gitReposSec">
-            <div class="gitReposTitle">
-              <h1>GitHub Repositories</h1>
-              <a href="https://github.com/muddyC0de"
-                ><span>All repositories ></span></a
-              >
+          <div class="githubReposItems"></div>
+        </div>
+        <div class="section otherSec">
+          <div class="otherSecItems">
+            <div class="otherSecItem">
+              <h2>Education</h2>
+              <p>
+                I am studying in the 11th grade at the Tubirtsi lyceum in
+                Cherkasy region.
+              </p>
             </div>
-            <div class="githubReposItems"></div>
-          </div>
-
-          <div class="section otherSec">
-            <div class="otherSecItems">
-              <div class="otherSecItem">
-                <h2>Educations</h2>
-                <p>
-                  I am studying in the 11th grade at the Tubirtsi lyceum in
-                  Cherkasy region
-                </p>
-              </div>
-              <div class="otherSecItem">
-                <h2>Frond-End</h2>
-                <ul>
-                  <li>- JavaScript (ES6)</li>
-                  <li>- TypeScript</li>
-                  <li>- ReactJS</li>
-                  <li>- NextJS</li>
-                  <li>- SCSS</li>
-                  <li>- Material UI, Bootstrap</li>
-                  <li>- Redux / Redux Thunk / Redux Toolkit</li>
-                </ul>
-              </div>
-              <div class="otherSecItem">
-                <h2>Contacts</h2>
-
-                <ul>
-                  <li>
-                    Email: <span class="bolder">vladlubchenko0@gmail.com</span>
-                  </li>
-                  <li>Telegram: <span class="bolder">@gryazyyy</span></li>
-                  <li>Phone: <span class="bolder">+380638448306</span></li>
-                </ul>
-              </div>
-              <div class="otherSecItem">
-                <h2>Other skills</h2>
-
-                <ul>
-                  <li>- Git / GitHub</li>
-                </ul>
-              </div>
+            <div class="otherSecItem">
+              <h2>Front-End</h2>
+              <ul>
+                <li>JavaScript (ES6)</li>
+                <li>TypeScript</li>
+                <li>ReactJS</li>
+                <li>NextJS</li>
+                <li>SCSS</li>
+                <li>Material UI, Bootstrap</li>
+                <li>Redux / Redux Thunk / Redux Toolkit</li>
+              </ul>
+            </div>
+            <div class="otherSecItem">
+              <h2>Contacts</h2>
+              <ul>
+                <li>
+                  Email: <span class="bolder">vladlubchenko0@gmail.com</span>
+                </li>
+                <li>Telegram: <span class="bolder">@gryazyyy</span></li>
+                <li>Phone: <span class="bolder">+380638448306</span></li>
+              </ul>
+            </div>
+            <div class="otherSecItem">
+              <h2>Other Skills</h2>
+              <ul>
+                <li>Git / GitHub</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="fullpage.js"></script>
+    <script src="fullpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
+```

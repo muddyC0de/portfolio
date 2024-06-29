@@ -1,5 +1,6 @@
 const navLi = document.querySelector(".navigation").querySelectorAll("li");
 const githubReposItems = document.querySelector(".githubReposItems");
+
 new fullpage("#fullpage", {
   //options here
   autoScrolling: true,
