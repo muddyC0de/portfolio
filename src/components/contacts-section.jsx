@@ -8,7 +8,7 @@ export const ContactsSection = ({ className }) => {
       <Container className={"min-h-screen flex justify-center flex-col"}>
         <SectionTitle
           title={"CONTACTS"}
-          imageUrl={"/images/contacts-icon.svg"}
+          imageUrl={"images/contacts-icon.svg"}
           width={30}
         />
 

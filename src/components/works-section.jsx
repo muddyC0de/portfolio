@@ -9,7 +9,7 @@ export const WorksSection = ({ className }) => {
         <SectionTitle
           width={35}
           title="WORKS"
-          imageUrl="/images/works-icon.svg"
+          imageUrl="images/works-icon.svg"
         />
         <div className="space-y-10">
           <WorkItem
@@ -27,7 +27,7 @@ export const WorksSection = ({ className }) => {
               "Zustand",
             ]}
             link="https://github.com/muddyC0de/next-pizza"
-            imageUrl="/images/works/next-pizza.png"
+            imageUrl="images/works/next-pizza.png"
           />
 
           <WorkItem
@@ -43,7 +43,7 @@ export const WorksSection = ({ className }) => {
               "SCSS",
             ]}
             link="https://github.com/muddyC0de/react-sneakers"
-            imageUrl="/images/works/react-sneakers.png"
+            imageUrl="images/works/react-sneakers.png"
           />
         </div>
       </Container>
