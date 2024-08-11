@@ -5,9 +5,13 @@ import { SectionTitle } from "./section-title";
 
 export const SkillsSection = ({ className }) => {
   return (
-    <section className={className}>
-      <Container>
-        <SectionTitle title="SKILLS" imageUrl="/images/skills-icon.svg" />
+    <section id="skills" className={className}>
+      <Container className={"min-h-screen flex justify-center flex-col"}>
+        <SectionTitle
+          width={35}
+          title="SKILLS"
+          imageUrl="/images/skills-icon.svg"
+        />
 
         <div className="grid grid-rows-[1fr] gap-x-[5px]  gap-y-[10px] grid-cols-[repeat(auto-fill,_minmax(120px,_1fr))]">
           <SkillsItem title="HTML5" imageUrl="/images/HTML5-icon.svg" />
