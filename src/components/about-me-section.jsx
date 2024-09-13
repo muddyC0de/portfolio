@@ -11,8 +11,7 @@ export const AboutMeSection = ({ className }) => {
         </h1>
 
         <p className="text-[25px] leading-[50px]">
-          Hi, my fullname is <b>Lubchenko Vlad</b>. I'm 16 years old.
-          <br />
+          Hi, my fullname is <b>Lubchenko Vlad</b>.
           I'm a frontend developer. I write code in JavaScript. <br /> My love
           is{" "}
           <img
