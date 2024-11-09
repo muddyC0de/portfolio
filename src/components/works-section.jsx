@@ -45,6 +45,40 @@ export const WorksSection = ({ className }) => {
             link="https://github.com/muddyC0de/react-sneakers"
             imageUrl="images/works/react-sneakers.png"
           />
+
+          <WorkItem
+            title="Next Blog"
+            description="An app for personal blogging."
+            techStack={[
+              "NextJS",
+              "TypeScript",
+              "ReactJS",
+              "TailwindCSS",
+              "Prisma / PostgreSQL",
+              "NextAuth",
+              "React Hook Form",
+              "Zod",
+            ]}
+            link="https://github.com/muddyC0de/next-blog"
+            imageUrl="images/works/next-blog.png"
+          />
+
+          <WorkItem
+            isReflected={true}
+            title="React Pizza"
+            description="Next Pizza's predecessor. Still the same online pizza shop with the ability to add items to basket, checkout, filtering."
+            techStack={[
+              "TypeScript",
+              "ReactJS",
+              "SCSS modules",
+              "mockAPI",
+              "React Hook Form",
+              "Redux Toolkit",
+              "React Router",
+            ]}
+            link="https://github.com/muddyC0de/react-pizza"
+            imageUrl="images/works/react-pizza.png"
+          />
         </div>
       </Container>
     </section>
