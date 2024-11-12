@@ -6,7 +6,7 @@ export const Container = ({ className, children }) => {
     <div
       className={clsx(
         className,
-        "max-w-[1360px] h-full mx-auto p-[0 92px] md:p-0"
+        "max-w-[1360px] h-full mx-auto px-3 lg:px-12 xl:px-0 p-[0 92px]"
       )}
     >
       {children}
