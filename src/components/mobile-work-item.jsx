@@ -23,10 +23,10 @@ export const MobileWorkItem = ({
         />
       </div>
 
-      <div className="pt-[25px] px-[30px] pb-[30px] ">
+      <div className="pt-[10px] px-[30px] pb-[30px] ">
         <div className="inline-block"></div>
 
-        <h2 className="font-extrabold gap-2 items-center flex break-words text-[25px] mt-[15px] mb-[10px] text-black">
+        <h2 className="font-extrabold gap-2 items-center flex break-words text-[25px]  text-black">
           {title}
           <a href={link}>
             <svg

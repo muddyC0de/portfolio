@@ -12,8 +12,8 @@ export const WorksSection = ({ className }) => {
           title="WORKS"
           imageUrl="images/works-icon.svg"
         />
-        <div className="space-y-10">
-          <div className="md:hidden">
+        <div>
+          <div className="md:hidden flex flex-col gap-8">
             <MobileWorkItem
               title="Next Pizza"
               description="A full-service grocery shop specialising in pizza. The site features a variety of filtering, authorisation, modal windows for pizzas, shopping cart and checkout"
@@ -80,7 +80,7 @@ export const WorksSection = ({ className }) => {
               imageUrl="images/works/next-blog.png"
             />
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:flex flex-col gap-10 ">
             <WorkItem
               title="Next Pizza"
               description="A full-service grocery shop specialising in pizza. The site features a variety of filtering, authorisation, modal windows for pizzas, shopping cart and checkout"
