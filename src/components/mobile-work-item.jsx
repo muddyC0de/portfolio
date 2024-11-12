@@ -13,7 +13,7 @@ export const MobileWorkItem = ({
     <div
       className={`${className} flex  cursor-pointer h-auto flex-col rounded-[15px] сursor-pointer   bg-white  border-[1px] border-[solid] border-[#f4f3f3]`}
     >
-      <div className="relative h-[260px]">
+      <div className="relative">
         <img
           src={imageUrl}
           alt={title}
@@ -23,7 +23,7 @@ export const MobileWorkItem = ({
         />
       </div>
 
-      <div className="pt-[10px] px-[30px] pb-[30px] ">
+      <div className="pt-[5px] px-[30px] pb-[30px] ">
         <div className="inline-block"></div>
 
         <h2 className="font-extrabold gap-2 items-center flex break-words text-[25px]  text-black">
