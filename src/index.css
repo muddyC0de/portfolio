@@ -26,3 +26,25 @@ body {
 
   position: relative;
 }
+
+.neon-text {
+  position: relative;
+  text-shadow: 0 0 5px #14df9b, 0 0 10px #14df9b, 0 0 20px #14df9b,
+    0 0 30px #14df9b, 0 0 40px #14df9b, 0 0 50px #14df9b, 0 0 75px #14df9b;
+  animation: neon-glow 2s infinite alternate;
+}
+
+@keyframes neon-glow {
+  0% {
+    text-shadow: 0 0 5px #14df9b, 0 0 10px #14df9b, 0 0 20px #14df9b,
+      0 0 30px #14df9b, 0 0 40px #14df9b, 0 0 50px #14df9b, 0 0 75px #14df9b;
+  }
+  50% {
+    text-shadow: 0 0 10px #14df9b, 0 0 20px #14df9b, 0 0 30px #14df9b,
+      0 0 40px #14df9b, 0 0 50px #14df9b, 0 0 75px #14df9b, 0 0 100px #14df9b;
+  }
+  100% {
+    text-shadow: 0 0 5px #14df9b, 0 0 10px #14df9b, 0 0 20px #14df9b,
+      0 0 30px #14df9b, 0 0 40px #14df9b, 0 0 50px #14df9b, 0 0 75px #14df9b;
+  }
+}

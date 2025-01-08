@@ -1,3 +1,5 @@
+import React from "react";
+import { motion } from "framer-motion";
 import {
   AboutMeSection,
   ContactsSection,
@@ -5,10 +7,21 @@ import {
   SkillsSection,
   WorksSection,
 } from "./components";
-import React from "react";
 import { Grid } from "./components/grid";
 
 export const sectionIds = ["about-me", "skills", "works", "contacts"];
+
+const fadeInVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.4, 0, 0.2, 1],
+    },
+  },
+};
 
 function App() {
   const [activeId, setActiveId] = React.useState(sectionIds[0]);
@@ -43,14 +56,49 @@ function App() {
       });
     };
   }, []);
+
   return (
     <>
       <Grid />
       <Header activeId={activeId} setActiveId={setActiveId} />
-      <AboutMeSection />
-      <SkillsSection />
-      <WorksSection />
-      <ContactsSection />
+
+      {/* Секции с анимацией при скролле */}
+      <motion.div
+        id="about-me"
+        variants={fadeInVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <AboutMeSection />
+      </motion.div>
+      <motion.div
+        id="skills"
+        variants={fadeInVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <SkillsSection />
+      </motion.div>
+      <motion.div
+        id="works"
+        variants={fadeInVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
+        <WorksSection />
+      </motion.div>
+      <motion.div
+        id="contacts"
+        variants={fadeInVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <ContactsSection />
+      </motion.div>
     </>
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
 
-export const SectionTitle = ({ title, imageUrl, width = 18 }) => {
+export const SectionTitle = ({ title, Icon }) => {
   return (
-    <h1 className="font-medium flex items-center text-3xl mb-[90px] ">
-      <img src={imageUrl} width={width} className={"mr-[16px]"} alt={title} />
+    <h1 className="font-medium flex items-center text-3xl gap-3 mb-[90px] ">
+      <Icon className="text-[#14DF9B] " size={35} />
       {title}
     </h1>
   );

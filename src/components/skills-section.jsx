@@ -2,16 +2,13 @@ import React from "react";
 import { Container } from "./container";
 import { SkillsItem } from "./skills-item";
 import { SectionTitle } from "./section-title";
+import { Code } from "lucide-react";
 
 export const SkillsSection = ({ className }) => {
   return (
     <section id="skills" className={className}>
       <Container className={"min-h-screen flex justify-center flex-col"}>
-        <SectionTitle
-          width={35}
-          title="SKILLS"
-          imageUrl="images/skills-icon.svg"
-        />
+        <SectionTitle title="SKILLS" Icon={Code} />
 
         <div className="grid grid-rows-[1fr] gap-x-[5px]  gap-y-[10px] grid-cols-[repeat(auto-fill,_minmax(120px,_1fr))]">
           <SkillsItem title="HTML5" imageUrl="images/HTML5-icon.svg" />
