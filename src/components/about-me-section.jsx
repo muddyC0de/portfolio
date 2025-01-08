@@ -5,13 +5,19 @@ export const AboutMeSection = ({ className }) => {
   return (
     <section id="about-me" className={`${className}`}>
       <Container className={"min-h-screen flex justify-center flex-col"}>
-        <h2 className={"text-[46px] text-[#646464]"}>Hello World! I'm</h2>
-        <h1 className={"text-[100px] font-extrabold mr-14  text-primary"}>
+        <h2 className={"text-[35px] md:text-[46px] text-[#646464]"}>
+          Hello World! I'm
+        </h2>
+        <h1
+          className={
+            "text-[80px] md:text-[100px] font-extrabold mr-14  text-primary"
+          }
+        >
           VLAD
         </h1>
 
-        <p className="text-[25px] leading-[50px]">
-          Hi, my fullname is <b>Lubchenko Vlad</b>.
+        <p className="text-[23px] leading-[50px]">
+          Hi, my fullname is <b>Vlad Liubchenko</b>.
           <br />
           I'm a frontend developer. I write code in JavaScript. <br /> My love
           is{" "}
