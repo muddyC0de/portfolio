@@ -5,8 +5,8 @@ import { Contact } from "lucide-react";
 
 export const ContactsSection = ({ className }) => {
   return (
-    <section id="contacts">
-      <Container className={"min-h-screen flex justify-center flex-col"}>
+    <section id="contacts" className="mb-20">
+      <Container className={" flex justify-center flex-col"}>
         <SectionTitle title={"CONTACTS"} Icon={Contact} />
 
         <div className="text-[21px] flex flex-col space-y-2">

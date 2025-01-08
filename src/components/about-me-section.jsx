@@ -3,8 +3,8 @@ import { Container } from "./container";
 
 export const AboutMeSection = ({ className }) => {
   return (
-    <section id="about-me" className={`${className}`}>
-      <Container className={"min-h-screen flex justify-center flex-col"}>
+    <section id="about-me" className={`${className} mt-52`}>
+      <Container className={"flex justify-center  flex-col"}>
         <h2 className={"text-[35px] md:text-[46px] text-[#646464]"}>
           Hello World! I'm
         </h2>

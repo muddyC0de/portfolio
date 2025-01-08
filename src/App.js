@@ -59,46 +59,48 @@ function App() {
 
   return (
     <>
-      <Grid />
-      <Header activeId={activeId} setActiveId={setActiveId} />
-
-      {/* Секции с анимацией при скролле */}
-      <motion.div
-        id="about-me"
-        variants={fadeInVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-      >
-        <AboutMeSection />
-      </motion.div>
-      <motion.div
-        id="skills"
-        variants={fadeInVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-      >
-        <SkillsSection />
-      </motion.div>
-      <motion.div
-        id="works"
-        variants={fadeInVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-      >
-        <WorksSection />
-      </motion.div>
-      <motion.div
-        id="contacts"
-        variants={fadeInVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-      >
-        <ContactsSection />
-      </motion.div>
+      {" "}
+      <div className="flex  flex-col gap-[23.5rem] mb-7">
+        <Grid />
+        <Header activeId={activeId} setActiveId={setActiveId} />
+        {/* Секции с анимацией при скролле */}
+        <motion.div
+          id="about-me"
+          variants={fadeInVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <AboutMeSection />
+        </motion.div>
+        <motion.div
+          id="skills"
+          variants={fadeInVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <SkillsSection />
+        </motion.div>
+        <motion.div
+          id="works"
+          variants={fadeInVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          <WorksSection />
+        </motion.div>
+        <motion.div
+          id="contacts"
+          variants={fadeInVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <ContactsSection />
+        </motion.div>
+      </div>
     </>
   );
 }

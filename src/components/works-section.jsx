@@ -33,7 +33,7 @@ export const WorksSection = ({ className }) => {
 
   return (
     <section id="works" className={className}>
-      <Container className="flex flex-col justify-center min-h-screen">
+      <Container className="flex flex-col justify-center ">
         <SectionTitle title="WORKS" Icon={BriefcaseBusiness} />
         <div>
           {/* Mobile version */}

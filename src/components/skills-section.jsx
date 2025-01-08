@@ -7,10 +7,10 @@ import { Code } from "lucide-react";
 export const SkillsSection = ({ className }) => {
   return (
     <section id="skills" className={className}>
-      <Container className={"min-h-screen flex justify-center flex-col"}>
+      <Container className={" flex justify-center flex-col"}>
         <SectionTitle title="SKILLS" Icon={Code} />
 
-        <div className="grid grid-rows-[1fr] gap-x-[5px]  gap-y-[10px] grid-cols-[repeat(auto-fill,_minmax(120px,_1fr))]">
+        <div className="grid grid-rows-[1fr] gap-x-[5px]  gap-y-[10px] grid-cols-[repeat(auto-fill,_minmax(107px,_1fr))]  md:grid-cols-[repeat(auto-fill,_minmax(120px,_1fr))]">
           <SkillsItem title="HTML5" imageUrl="images/HTML5-icon.svg" />
           <SkillsItem title="CSS3" imageUrl="images/CSS3-icon.svg" />
           <SkillsItem title="JS" imageUrl="images/JS-icon.svg" />
